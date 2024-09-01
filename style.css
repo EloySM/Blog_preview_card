@@ -1,6 +1,7 @@
 body {
     background-color: hsl(47, 88%, 63%);
-    font-family: "Figtree", sans-serif;;
+    font-family: "Figtree", sans-serif;
+    ;
 }
 
 #box {
@@ -8,15 +9,48 @@ body {
     display: flex;
     height: 600px;
     border: solid 2px black;
-    box-shadow: 5px 5px black;
+    /* box-shadow: 5px 5px black; */
     border-radius: 25px;
     flex-direction: column;
-    width: 400px; 
+    width: 400px;
     margin: auto;
     margin-top: 300px;
     padding: 25px;
-    
+    position: relative;
+
+    &::after {
+        --angle: 0deg;
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: conic-gradient(from var(--angle), transparent 0%, #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        padding: 7px;
+        border-radius: 25px;
+        filter: blur(1.5rem);
+        animation: 3s spin linear infinite;
+    }
 }
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
 #ilustration {
     border-radius: 10px;
 }
@@ -52,7 +86,7 @@ h1 {
 }
 
 #avatar {
-    
+
     vertical-align: middle;
     max-width: 12%;
     height: auto;
