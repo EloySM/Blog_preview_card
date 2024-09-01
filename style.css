@@ -1,0 +1,73 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree", sans-serif;;
+}
+
+#box {
+    background-color: aliceblue;
+    display: flex;
+    height: 600px;
+    border: solid 2px black;
+    box-shadow: 5px 5px black;
+    border-radius: 25px;
+    flex-direction: column;
+    width: 400px; 
+    margin: auto;
+    margin-top: 300px;
+    padding: 25px;
+    
+}
+#ilustration {
+    border-radius: 10px;
+}
+
+#learning p {
+    width: 70px;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 6px;
+    margin: 20px 0px;
+    padding: 3px 14px;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h1 {
+    font-weight: bolder;
+
+    &:hover {
+        color: hsl(47, 88%, 63%);
+        cursor: url('img/hand22.png'), auto;
+    }
+}
+
+#text {
+    margin-top: -0.5%;
+    color: hsl(0, 0%, 42%);
+}
+
+#avatar {
+    
+    vertical-align: middle;
+    max-width: 12%;
+    height: auto;
+
+}
+
+#text {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+#greg-hooper {
+    padding: 0% 3%;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bolder;
+    font-size: 17px;
+}
